@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedQAI - Real-Time Medicine Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url('images/devanagari-bg.jpg'); /* Optional: Replace with relevant background */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 50px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    ul li strong {
+      color: #17ffd8;
+    }
+
+    .carousel-img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ffc107;
+      border-radius: 50%;
+    }
+
+    .btn-primary {
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #e0a800;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <div class="overlay">
+    <h2 class="text-center mb-4"> MedQAI - Real-Time Medicine Assistant</h2>
+
+    <!-- Project Info -->
+    <div class="mb-4">
+      <ul class="list-unstyled">
+        <li><strong>Backend:</strong> Python, Flask</li>
+        <li><strong>Model:</strong> GPT-4 Mini with RAG (Retrieval-Augmented Generation)</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      </ul>
+    </div>
+
+    <!-- Project Description -->
+    <p>
+      MedQAI is an intelligent real-time medicine assistant designed to respond to medical queries using a specialized GPT-4 Mini model.
+      The system is capable of dynamically retrieving verified data from trusted medical sources such as PubMed and WebMD.
+      By integrating web scraping, fine-tuning, and advanced NLP pipelines, MedQAI ensures users receive accurate and relevant medical information on demand.
+    </p>
+
+    <!-- Key Features -->
+    <h4 class="mt-4" style="color:#17ffd8;">Key Features</h4>
+    <ul>
+      <li><strong>Dynamic Data Retrieval:</strong> Develop a system capable of fetching real-time medical information from trusted sources.</li>
+      <li><strong>Efficient Query Processing:</strong> Handle complex medical inquiries with accuracy and relevance.</li>
+      <li><strong>Leverage Qdrant for Vector Search:</strong> Utilize Qdrant to store and retrieve pre-indexed medical data quickly.</li>
+      <li><strong>Integration of RAG Framework:</strong> Combine contextual data retrieval with GPT-4 Mini's generative abilities using a Retrieval-Augmented Generation (RAG) approach.</li>
+      <li><strong>Unique Approach:</strong> Implement real-time web scraping and integrate search engine capabilities with reliable medical sources.</li>
+    </ul>
+    <div class="text-center my-5">
+			<a href="images\Data_Mining_Report.pdf" class="btn btn-primary px-4 py-2" target="_blank" download>
+			  Report
+			</a>
+		  </div>
+
+    <!-- Image Carousel -->
+    <div id="medqaiCarousel" class="carousel slide mt-4 mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/Screenshot 2025-05-01 210702.png" width="100" class="d-block w-100 carousel-img" alt="MedQAI UI Overview">
+          </div>
+          <div class="carousel-item">
+              <img src="images/med2.png" width="100" class="d-block w-100 carousel-img" alt="Search Query Example">
+          </div>
+          <div class="carousel-item">
+              <img src="images/medd.jpg" class="d-block w-100 carousel-img" alt="Result View">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#medqaiCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#medqaiCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

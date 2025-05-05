@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jeevan Kaphle Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Jeevan Kaphle</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/backk.jpg);">
+					<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Jeevan Kaphle</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						' Computer Engineer ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+										  <img src="images/about-me.jpg" class="img-fluid rounded-circle b-shadow-a" alt="">
+										</div>
+									  </div>
+									  
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Jeevan Kaphle</span></p>
+										<p><span class="title-s"> </span> <span>Student</span></p>
+										
+										<p><span class="title-s"> Permanent Address: </span> <span>Kathmandu,Nepal</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>DATA VISULATION AND ANALYTICS</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									
+									<span>MACHINE LEARNING</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hello! I'm Jeevan Kaphle, a passionate developer with a keen interest in web technologies, machine learning, and human-centered design. I enjoy building elegant, functional web solutions and constantly strive to improve through learning and collaboration.</p>
+								<p>Beyond coding, I actively engage in community tech events and am dedicated to creating tools that benefit education, health, and accessibility.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Machine Learning Enthutiast</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Computer Science</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Masters in Computer Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Nepali,Hindi</span></li>
+									
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								
+								<p><a href="https://www.linkedin.com/in/jeevan-kaphle-7b8017213/?originalSubdomain=np" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Passionate Computer Science graduate with experience in machine learning, reinforcement learning, and real-time AI systems. Demonstrated success in building intelligent assistants and pattern recognition models with strong foundations in Python, NLP, and image processing.</p>
+          </div>
+		  
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022 May-2023 Jan</span>
+						<h2>Junior Software Developer</h2>
+						<span class="position">Pathway Technologies</span>
+						
+						<p class="mt-4"> 
+							 
+							<ul>
+								<li>Implemented a customized software solution using Python and SQL, enhancing data processing speed by 30%.</li>
+								<li>Conducted analysis on real-time traffic data, identifying inefficiencies in route optimization that reduced travel
+									times by 10%.</li>
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+					  <span class="date">Feb 2023 – Nov 2023</span>
+					  <h2>Teacher (Diploma Level)</h2>
+					  <span class="position">Shree-Tri Shaheed Secondary School</span>
+					  <p class="mb-1"><small>Panchamool, Syangja</small></p>
+					  
+					  <ul class="mt-3">
+						<li>Taught diploma-level courses in C, C++, and Digital Logic.</li>
+						<li>Developed course materials and hands-on exercises to deepen understanding of programming and digital systems.</li>
+						<li>Assessed student performance through assignments and exams, resulting in notable grade improvements.</li>
+					  </ul>
+					</div>
+				  </div>
+				  
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<!-- Resume Entry 1 -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">2024-2025</span>
+				<h2>Masters in Computer Science</h2>
+				<span class="position">University of South Dakota</span>
+				<p class="mb-1"><small>414 E Clark St, Vermillion, SD 57069, USA</small></p>
+				<p class="mt-3">Grade: In Progress</p>
+			  </div>
+			</div>
+		  
+			<!-- Resume Entry 2 -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">2017-2022</span>
+				<h2>Bachelor of Engineering</h2>
+				<span class="position">Tribhuvan University</span>
+				<p class="mb-1"><small>Kathmandu,Nepal</small></p>
+				<p class="mt-4">Percentage: 75.12</p>
+			  </div>
+			</div>
+		  
+			<!-- Resume Entry 3 -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">2015-2017</span>
+				<h2>Higher Secondary School</h2>
+				<span class="position">Prasadi Academy</span>
+				<p class="mb-1"><small>Lalitpur,Nepal</small></p>
+				<p class="mt-4">Percentage: 83.00</p>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <!-- CV Download Button -->
+		  <div class="text-center my-5">
+			<a href="images\Resume_Jeevan.pdf" class="btn btn-primary px-4 py-2" target="_blank" download>
+			  Download Resume
+			</a>
+		  </div>
+		  
+		  
+    </section>
+
+   
+
+    	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects &lt;/&gt;</h2>
+			  <p>Below are the sample projects that I learned and did.</p>
+			</div>
+		  </div>
+	  
+		  <!-- Project Grid (3 columns) -->
+		  <div class="row text-center">
+			<div class="col-md-4 mb-4">
+			  <a href="project-virtual-hospital.html">
+				<img src="images/virtual.jpeg" class="img-fluid project-img" alt="Virtual Hospital" />
+			  </a>
+			  <p class="project-title">Virtual Hospital</p>
+			</div>
+	  
+			<div class="col-md-4 mb-4">
+			  <a href="handwritten_text_recognition.html">
+				<img src="images/n1.jpeg" class="img-fluid project-img" alt="Nepali Handwritten Text Recognition" />
+			  </a>
+			  <p class="project-title">Nepali Handwritten Text Recognition</p>
+			</div>
+	  
+			<div class="col-md-4 mb-4">
+			  <a href="diabetes.html">
+				<img src="images/d1.png" class="img-fluid project-img" alt="Diabetes Prediction" />
+			  </a>
+			  <p class="project-title">Diabetes Prediction</p>
+			</div>
+	  
+			<div class="col-md-4 mb-4">
+			  <a href="project-snake-game.html">
+				<img src="images/s1.gif" class="img-fluid project-img" alt="Snake Game" />
+			  </a>
+			  <p class="project-title">Snake Game</p>
+			</div>
+	  
+			<div class="col-md-4 mb-4">
+			  <a href="project-medqai.html">
+				<img src="images/medical.jpg" class="img-fluid project-img" alt="MedQAI" />
+			  </a>
+			  <p class="project-title">MedQAI - Real-Time Medicine Assistant</p>
+			</div>
+	  
+			<div class="col-md-4 mb-4">
+				<a href="project-proteomics-chatbot.html">
+				  <img src="images/pr.webp" class="img-fluid project-img" alt="Proteomics Chatbot" />
+				</a>
+				<p class="project-title">Proteomics Chatbot</p>
+			  </div>
+			  
+	  
+			<div class="col-md-4 mb-4">
+			  <a href="project-bagchal.html">
+				<img src="images/bag1.jpg"  width="275" height="275" project-img" alt="Bagchal Game" />
+			  </a>
+			  <p class="project-title">Bagchal</p>
+			</div>
+	  
+			<!-- <div class="col-md-4 mb-4">
+			  <a href="#">
+				<img src="images/com.jpg" class="img-fluid project-img" alt="More Projects Coming Soon" />
+			  </a>
+			  <p class="project-title">Coming Soon</p>
+			</div> -->
+		  </div>
+		</div>
+	  </section>
+	  
+				
+		  <style>
+			.project-img {
+			  width: 100%;
+			  height: 250px;
+			  object-fit: cover;
+			  border-radius: 10px;
+			  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+			}
+			.project-title {
+			  font-weight: bold;
+			  margin-top: 15px;
+			}
+		  </style>
+	<style>
+		body {
+		  background-color: #1a1a1a;
+		  color: #fff;
+		  font-family: 'Segoe UI', sans-serif;
+		}
+	
+		.contact-section {
+		  padding: 60px 0;
+		}
+	
+		.contact-heading {
+		  color: #ffc107;
+		  font-weight: bold;
+		  margin-bottom: 20px;
+		}
+	
+		.contact-subtext {
+		  margin-bottom: 40px;
+		  color: #ccc;
+		}
+	
+		.social-icons a {
+		  display: inline-block;
+		  margin: 0 20px;
+		  color: #fff;
+		  font-size: 2rem;
+		  transition: transform 0.3s, color 0.3s;
+		}
+	
+		.social-icons a:hover {
+		  color: #ffc107;
+		  transform: scale(1.2);
+		}
+	
+		.social-icons i {
+		  margin-bottom: 8px;
+		}
+	  </style>
+	  <!-- Blogs Section -->
+<!-- Blogs Section -->
+<section class="ftco-section contact-section ftco-no-pb" id="blogs-section" style="padding: 60px 0; background-color: #fdfdff;">
+	<div class="container">
+	  <div class="row justify-content-center mb-5 pb-3">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+		  <h2 class="mb-4" style="color: #f39c12; display: flex; align-items: center; justify-content: center;">
+			BLOGS
+			<span class="icon d-flex align-items-center justify-content-center contact-icon" style="font-size: 2rem; color: #f39c12; margin-left: 10px;">
+			  <i class="icon-pencil"></i>
+			</span>
+		  </h2>
+		  <p style="font-size: 1.2rem; color: #5346a1;">Explore my thoughts, projects, and insights.</p>
+		</div>
+	  </div>
+  
+	  <div class="row">
+		<!-- Blog Card 1 -->
+		<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+		  <div class="box p-4 text-center" style="background-color: #f9ebea; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); width: 100%;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #2980b9; padding: 20px; border-radius: 50%; margin: 0 auto 20px;">
+			  <span class="icon-book" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-3" style="color: #2c3e50;">Journey with GPT-4 in Medical AI</h3>
+			<p style="color: #34495e;">MedQAI is an intelligent, web-based assistant designed to provide accurate and trustworthy answers to medical questions using advanced natural language processing (NLP). At its core, MedQAI leverages a fine-tuned GPT-4 Mini model integrated with retrieval-augmented generation (RAG) techniques to deliver real-time responses by dynamically pulling information from reputable medical databases like PubMed, WebMD, and the Mayo Clinic.</p>
+			<a href="https://arxiv.org/abs/2005.11401" class="btn btn-sm btn-primary mt-2" style="background-color: #2980b9; border: none;">Read More</a>
+		  </div>
+		</div>
+  
+		<!-- Blog Card 2 -->
+		<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+		  <div class="box p-4 text-center" style="background-color: #e8f8f5; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); width: 100%;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #e67e22; padding: 20px; border-radius: 50%; margin: 0 auto 20px;">
+			  <span class="icon-lightbulb-o" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-3" style="color: #2c3e50;">🎮 Bagh-Chal (Tiger and Goat Game)</h3>
+			<p style="font-size: 1.1rem; color: #34495e;">
+				The main objective for the tigers is to <strong>hunt</strong> (capture) the goats, whereas the goats try to <strong>trap and block</strong> the tigers so they cannot move. The unique dynamics and roles in the game make it a challenging and engaging test of foresight and planning.
+			  </p>
+			  <p style="font-size: 1.1rem; color: #34495e;">
+				Though native to Nepal, a similar version is also seen in <strong>southern India</strong>, with minor board variations but identical rules. The game remains popular, especially in <strong>rural areas</strong>, where it's not only a pastime but also a cultural symbol of strategic thinking.
+			  </p>
+			<a href="https://en.wikipedia.org/wiki/Bagh-chal" class="btn btn-sm btn-primary mt-2" style="background-color: #e67e22; border: none;">Read More</a>
+		  </div>
+		</div>
+  
+		<!-- Blog Card 3 -->
+		<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+		  <div class="box p-4 text-center" style="background-color: #fef9e7; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); width: 100%;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #27ae60; padding: 20px; border-radius: 50%; margin: 0 auto 20px;">
+			  <span class="icon-code" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h2 class="mb-4" style="color: #2c3e50;">🤖 Protemocis Chatbot</h2>
+			<p style="color: #34495e;"><p style="color: #34495e;">Extracting protein-related information using natural language queries poses a significant challenge. The Proteomics Chatbot addresses this by enabling intelligent querying over the UniProt database using four distinct retrieval strategies. It combines state-of-the-art embeddings and direct API access to deliver both precision and flexibility.
+			</p>.</p>
+			<a href="https://www.nature.com/articles/s41467-025-57430-4" class="btn btn-sm btn-primary mt-2" style="background-color: #27ae60; border: none;">Read More</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+  <!-- Contact Section (Unchanged) -->
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section" style="padding: 60px 0; background-color: #ffffff;">
+	<div class="container">
+	  <div class="row justify-content-center mb-5 pb-3">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+		  <h1 class="big big-2" style="font-size: 3rem; color: #2c3e50;"></h1>
+		  <h2 class="mb-4" style="color: #f39c12; display: flex; align-items: center; justify-content: center;">
+			CONTACT
+			<span class="icon d-flex align-items-center justify-content-center" style="font-size: 2rem; color: #f39c12; margin-left: 10px;">
+			  <i class="icon-mail"></i>
+			</span>
+		  </h2>
+		  <p style="font-size: 1.2rem; color: #34495e;">Feel free to reach out to me using the details below!</p>
+		</div>
+	  </div>
+  
+	  <!-- Contact Info -->
+	  <div class="row d-flex contact-info mb-5">
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+		  <div class="align-self-stretch box p-4 text-center" style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); background-color: #ffffff;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #f39c12; padding: 20px; border-radius: 50%;">
+			  <span class="icon-map-signs" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-4" style="color: #2c3e50;">Address</h3>
+			<p style="color: #34495e;">Vermillion, South Dakota, USA</p>
+		  </div>
+		</div>
+  
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+		  <div class="align-self-stretch box p-4 text-center" style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); background-color: #ffffff;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #27ae60; padding: 20px; border-radius: 50%;">
+			  <span class="icon-phone2" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-4" style="color: #2c3e50;">Contact Number</h3>
+			<p><a href="tel://0101010101" style="color: #34495e; font-weight: bold;">+1 518-308-2635</a></p>
+		  </div>
+		</div>
+  
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+		  <div class="align-self-stretch box p-4 text-center" style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); background-color: #ffffff;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #c0392b; padding: 20px; border-radius: 50%;">
+			  <span class="icon-paper-plane" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-4" style="color: #2c3e50;">Email Address</h3>
+			<p><a href="mailto:jeevan.kaphle@coyotes.usd.edu" style="color: #34495e; font-weight: bold;">kafleyj55@gmail.com</a></p>
+		  </div>
+		</div>
+  
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+		  <div class="align-self-stretch box p-4 text-center" style="border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); background-color: #ffffff;">
+			<div class="icon d-flex align-items-center justify-content-center" style="background-color: #8e44ad; padding: 20px; border-radius: 50%;">
+			  <span class="icon-globe" style="font-size: 2.5rem; color: white;"></span>
+			</div>
+			<h3 class="mb-4" style="color: #2c3e50;"></h3>
+			<p><a href="images/Resume_Jeevan.pdf" style="color: #34495e; font-weight: bold;">DOWNLOAD RESUME</a></p>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Social Links -->
+	  <div class="row justify-content-center">
+		<div class="col-md-7 text-center">
+		  <br>
+		  <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+			<li class="ftco-animate" style="margin-left: 15px;">
+			  <a href="https://www.linkedin.com/in/jeevan-kaphle-7b8017213/?originalSubdomain=np">
+				<span class="icon-linkedin" style="color: #0077b5; font-size: 2.5rem;"></span>
+			  </a>
+			</li>
+			<li class="ftco-animate" style="margin-left: 15px;">
+			  <a href="https://www.facebook.com/jeevan.kaphle.94">
+				<span class="icon-facebook" style="color: #3b5998; font-size: 2.5rem;"></span>
+			  </a>
+			</li>
+			<li class="ftco-animate" style="margin-left: 15px;">
+			  <a href="https://www.instagram.com/kafley77/">
+				<span class="icon-instagram" style="color: #e4405f; font-size: 2.5rem;"></span>
+			  </a>
+			</li>
+			<li class="ftco-animate" style="margin-left: 15px;">
+			  <a href="https://github.com/kafleyj">
+				<span class="icon-github" style="color: #060606d1; font-size: 2.5rem;"></span>
+			  </a>
+			</li>
+		  </ul>
+		  <br>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+	
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

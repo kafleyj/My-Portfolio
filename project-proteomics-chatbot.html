@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proteomics Chatbot - Virtual Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url('images/devanagari-bg.jpg'); /* Replace with suitable background */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 50px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    ul li strong {
+      color: #17ffd8;
+    }
+
+    .carousel-img {
+      height: 400px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ffc107;
+      border-radius: 50%;
+    }
+
+    .btn-primary {
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #e0a800;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <div class="overlay">
+    <h2 class="text-center mb-4">Proteomics Chatbot</h2>
+
+    <!-- Project Info -->
+    <div class="mb-4">
+      <ul class="list-unstyled">
+       
+        <li><strong>Model Used:</strong> LLaMA 3.2:1b with RAG (Retrieval-Augmented Generation)</li>
+        <li><strong>Database:</strong> UniProt (253M protein entries)</li>
+      </ul>
+    </div>
+
+    <!-- Description -->
+    <p>
+      The Proteomics Chatbot is an AI-powered assistant that enables users to query complex protein-related data from the UniProt database using simple natural language. 
+      The system merges semantic search techniques with domain-specific models to boost the quality and specificity of biological answers.
+    </p>
+
+    <!-- Approaches -->
+    <h4 style="color:#17ffd8;">Key Approaches</h4>
+    <ul>
+      <li><strong>Vector Search:</strong> FAISS engine combined with SentenceTransformer embeddings</li>
+      <li><strong>Domain Knowledge:</strong> Uses ProtBERT for handling protein sequences</li>
+      <li><strong>Hybrid Retrieval:</strong> Combines semantic vector results with UniProt API data</li>
+    </ul>
+
+    <!-- Results -->
+    <h4 style="color:#17ffd8;">Results & Observations</h4>
+    <ul>
+      <li>Hybrid method achieved the best performance in accuracy and adaptability</li>
+      <li>API-only failed to understand nuanced natural queries</li>
+      <li>ProtBERT significantly improved biological relevance in retrieval</li>
+    </ul>
+    <div class="text-center my-5">
+			<a href="images\Chatbot.pdf" class="btn btn-primary px-4 py-2" target="_blank" download>
+			  Report
+			</a>
+		  </div>
+
+    <!-- Image Carousel -->
+    <div id="proteomicsCarousel" class="carousel slide mt-4 mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/p1 (1).png" class="d-block w-100 carousel-img" alt="Chatbot Overview">
+        </div>
+        <div class="carousel-item">
+          <img src="images/p1 (2).png" class="d-block w-100 carousel-img" alt="Chatbot Interaction">
+        </div>
+        <div class="carousel-item">
+          <img src="images/p1 (3).png" class="d-block w-100 carousel-img" alt="Chatbot Results">
+        </div>
+        <div class="carousel-item">
+          <img src="images/p1 (4).png" class="d-block w-100 carousel-img" alt="Chatbot Performance">  
+        </div>
+
+        <!-- Add more carousel items if needed -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#proteomicsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#proteomicsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

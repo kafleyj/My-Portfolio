@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bagh-Chal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        background-image: url('images/devanagari-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+        overflow-x: hidden;
+      }
+
+      .overlay {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-out;
+      }
+
+      h2 {
+        color: #ffc107;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      h4 {
+        color: #17ffd8;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        animation: fadeInUp 1s ease-out 0.3s;
+      }
+
+      ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        animation: fadeInUp 1s ease-out 0.5s;
+      }
+
+      ul li strong {
+        color: #17ffd8;
+      }
+
+      .carousel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .carousel-img:hover {
+        transform: scale(1.05);
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #17ffd8;
+      }
+
+      .carousel-inner .carousel-item img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .carousel-inner .carousel-item img:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+
+      .card {
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-custom {
+        background-color: #17ffd8;
+        color: #000;
+        border-radius: 30px;
+        font-weight: bold;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+        animation: fadeInUp 1s ease-out 1s;
+      }
+
+      .btn-custom:hover {
+        background-color: #ffc107;
+        color: #000;
+      }
+
+      /* Keyframe Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="overlay">
+        <h2 class="text-center mb-4 animate__animated animate__fadeIn animate__delay-1s">Bagh-Chal - The Tiger and Goats Game</h2>
+
+        <!-- Game Information -->
+        <div class="mb-4">
+          <ul class="list-unstyled">
+            <li><strong>Project Type:</strong> Game Development</li>
+            <li><strong>Platform:</strong> Python (Tkinter / Pygame)</li>
+          </ul>
+        </div>
+
+        <!-- Game Description -->
+        <p class="animate__animated animate__fadeIn animate__delay-2s">
+          Bagh-Chal is a traditional strategy board game from Nepal, played on a
+          5×5 point grid resembling alquerque. Pieces are placed at line intersections,
+          not inside the squares. Movement is governed by the lines connecting these points.
+        </p>
+        <p class="animate__animated animate__fadeIn animate__delay-2.5s">
+          The game unfolds in two distinct phases. In the first phase, all goats are placed
+          one by one while tigers can move. In the second phase, both tigers and goats can
+          move. The tigers aim to capture five goats by jumping over them, similar to draughts,
+          though capturing is not mandatory. Goats win if they block all tigers from moving.
+        </p>
+
+        <!-- Key Features -->
+        <h4 class="animate__animated animate__fadeIn animate__delay-3s">Key Features</h4>
+        <ul>
+          <li><strong>Traditional Logic:</strong> Accurate implementation of Bagh-Chal rules and win conditions</li>
+          <li><strong>Turn-Based System:</strong> Two-phase game logic for placement and movement</li>
+          <li><strong>Strategic AI:</strong> Optional mode to play against AI-controlled tiger or goat</li>
+          <li><strong>Visual Feedback:</strong> Highlighted legal moves and captures</li>
+        </ul>
+
+        <!-- Image Carousel -->
+        <div id="medqaiCarousel" class="carousel slide mt-4 mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bag.png" class="d-block w-100 carousel-img" alt="Bagh-Chal UI Overview">
+            </div>
+            <div class="carousel-item">
+              <img src="images/baag.png" class="d-block w-100 carousel-img" alt="Gameplay Screenshot">
+            </div>
+            <div class="carousel-item">
+              <img src="images/bag1.jpg" class="d-block w-100 carousel-img" alt="Board Setup">
+            </div>
+            <div class="carousel-item">
+              <img src="images/bag2.jpg" class="d-block w-100 carousel-img" alt="Game in Progress">
+            </div>
+            <div class="carousel-item">
+              <img src="images/bag3.png" class="d-block w-100 carousel-img" alt="Result View">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#medqaiCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#medqaiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- Download Button -->
+        <div class="text-center">
+          <a href="images/BaghChalGame.zip" class="btn btn-custom">Report</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
